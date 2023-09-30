@@ -31,8 +31,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 DEBUG = os.environ.get('DJANGO_DEBUG', '1').lower() in ['true', 't', '1']
 
 ALLOWED_HOSTS = [
+    'swe1-app-vr672.us-east-1.elasticbeanstalk.com',
     '127.0.0.1',
-    'swe1-app-vr672.us-east-1.elasticbeanstalk.com'
 ]
 
 
