@@ -1,0 +1,19 @@
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+
+# Virtual Environment
+.env
+.venv
+/env
+/venv
+requirements.txt
+
+# DB
+db.sqlite3
+
+# AWS
+.ebextensions
