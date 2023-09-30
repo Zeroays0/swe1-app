@@ -11,7 +11,6 @@
 .venv
 /env
 /venv
-requirements.txt
 
 # DB
 db.sqlite3
