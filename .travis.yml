@@ -3,17 +3,17 @@ language: python
 python:
   - "3.9"
 
-install:
-  - pip install -r requirements.txt
-  - pip install black
-  - pip install flake8
-  - pip install coverage
-  - pip install coveralls
-
 before_script:
   - cd mysite
   - python manage.py migrate
   - python manage.py collectstatic --noinput
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install sqlite3
+
+install:
+  - pip install -r requirements.txt
 
 script:
   - black --check .
