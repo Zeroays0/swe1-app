@@ -8,7 +8,7 @@ before_script:
   - python manage.py migrate
 
 before_install:
-  - sudo apt-add-repository -y ppa:travis-ci/sqlite3
+  - sudo apt-add-repository -y ppa:travis/sqlite3
   - sudo apt-get -y update
   - sudo apt-get -y install sqlite3=3.43.3~travis1
 
