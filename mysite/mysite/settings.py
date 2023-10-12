@@ -35,7 +35,7 @@ ALLOWED_HOSTS = ["mysite-dev2.us-west-2.elasticbeanstalk.com", "127.0.0.1"]
 # Application definition
 
 INSTALLED_APPS = [
-    "polls.apps.PollsConfig",
+    "polls",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",

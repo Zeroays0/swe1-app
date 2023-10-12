@@ -18,6 +18,7 @@ before_script:
 script:
   - black --check .
   - flake8 .
+  - coverage run manage.py test polls
 
 after_success: 
   - coveralls
@@ -27,6 +28,6 @@ deploy:
   access_key_id: $AWS_EB_ACCESS_KEY
   secret_access_key: $AWS_EB_SECRET_ACCESS_KEY
   region: "us-west-2"
-  app: "swe1-app-master"
-  env: "swe1-app-master-env"
-  bucket_name: ""
+  app: "mysite-dev2"
+  env: "mysite-dev2"
+  bucket_name: $AWS_EB_BUCKET_NAME
