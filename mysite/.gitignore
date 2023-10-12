@@ -20,4 +20,5 @@ db.sqlite3
 
 # Coveralls
 .coveralls.yml
+.coverage
 
