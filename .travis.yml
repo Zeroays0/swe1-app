@@ -1,3 +1,5 @@
+dist: xenial
+
 language: python
 
 python:
@@ -6,11 +8,6 @@ python:
 before_script:
   - cd mysite
   - python manage.py migrate
-
-before_install:
-  - sudo apt-add-repository -y ppa:travis/sqlite3
-  - sudo apt-get -y update
-  - sudo apt-get -y install sqlite3=3.43.3~travis1
 
 install:
   - pip install -r requirements.txt
