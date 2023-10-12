@@ -5,6 +5,16 @@ python:
 
 before_script:
   - cd mysite
+  - python manage.py migrate
+  - python manage.py collectstatic --noinput
+
+before_install:
+  - wget "https://www.sqlite.org/2020/sqlite-autoconf-3320100.tar.gz"
+  - tar xzf sqlite-autoconf-3320100.tar.gz
+  - cd sqlite-autoconf-3320100
+  - ./configure --prefix=/usr/local
+  - make
+  - sudo make install
 
 install:
   - pip install -r requirements.txt
