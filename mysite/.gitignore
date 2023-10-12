@@ -18,4 +18,5 @@
 # DB
 db.sqlite3
 
-# AWS
+# Coveralls
+.coveralls.yml
